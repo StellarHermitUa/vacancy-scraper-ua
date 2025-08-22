@@ -1,6 +1,7 @@
 <?php
 /**
  * Plugin Name: Vacancy Scraper UA
+ * Plugin URI: https://wordpress.org/plugins/vacancy-scraper-ua
  * Description: Receives job vacancies from work.ua and robota.ua for display on the website
  * Version: 1.1
  * Requires at least: 6.8
