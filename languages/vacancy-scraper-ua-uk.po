@@ -1,0 +1,328 @@
+# Copyright (C) 2025 StellarHermitUa
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Vacancy Scraper UA 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/vacancy-scraper-ua\n"
+"POT-Creation-Date: 2025-08-01T12:22:28+00:00\n"
+"PO-Revision-Date: 2025-08-01 16:20+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+"X-Domain: vacancy-scraper-ua\n"
+
+#. Plugin Name of the plugin
+#: vacancy-scraper-ua.php includes/class-settings-page.php:7
+msgid "Vacancy Scraper UA"
+msgstr "Vacancy Scraper UA"
+
+#. Description of the plugin
+#: vacancy-scraper-ua.php
+msgid "Receives job vacancies from work.ua and robota.ua for display on the website"
+msgstr "Отримує вакансії з work.ua та robota.ua для відображення на вебсайті"
+
+#. Author of the plugin
+#: vacancy-scraper-ua.php
+msgid "StellarHermitUa"
+msgstr "StellarHermitUa"
+
+#. Author URI of the plugin
+#: vacancy-scraper-ua.php
+msgid "https://github.com/StellarHermitUa"
+msgstr "https://github.com/StellarHermitUa"
+
+#: includes/class-admin-handler.php:32
+msgid "Security check failed."
+msgstr "Перевірка безпеки не пройдена."
+
+#: includes/class-admin-handler.php:62
+msgid "Company data removed."
+msgstr "Дані компанії видалено."
+
+#: includes/class-admin-handler.php:99
+msgid "Company ID saved successfully."
+msgstr "ID компанії успішно збережено."
+
+#: includes/class-admin-handler.php:123 includes/class-admin-handler.php:140
+msgid "Vacancies copied"
+msgstr "Вакансії скопійовано"
+
+#: includes/class-admin-handler.php:130 includes/class-admin-handler.php:147
+msgid "Vacancies fetching will be implemented soon."
+msgstr "Отримання вакансій буде реалізовано найближчим часом."
+
+#: includes/class-admin-handler.php:186 includes/class-admin-handler.php:222
+msgid "Options saved."
+msgstr "Налаштування збережено."
+
+#: includes/class-frontend.php:113
+msgid "Template not found."
+msgstr "Шаблон не знайдено."
+
+#: includes/class-settings-page.php:8
+msgid "Vacancy Scraper"
+msgstr "Vacancy Scraper"
+
+#: includes/class-settings-page.php:17 includes/class-settings-page.php:18
+#: templates/admin-page.php:19
+msgid "Work.ua"
+msgstr "Work.ua"
+
+#: includes/class-settings-page.php:26 includes/class-settings-page.php:27
+#: templates/admin-page.php:23
+msgid "Robota.ua"
+msgstr "Robota.ua"
+
+#: includes/class-settings-page.php:37 includes/class-settings-page.php:38
+#: templates/admin-page.php:27
+msgid "Help"
+msgstr "Допомога"
+
+#: includes/class-settings-page.php:71
+msgid "Are you sure you want to delete the company? All data will be deleted."
+msgstr "Ви впевнені, що хочете видалити компанію? Усі дані буде видалено."
+
+#: includes/class-settings-page.php:72
+msgid "Do you want to fetch vacancies now? Existing vacancies will be rewritten."
+msgstr "Бажаєте отримати вакансії зараз? Існуючі вакансії буде перезаписано."
+
+#: includes/class-settings-page.php:137
+msgid "The Work.ua company ID or URL cannot be empty."
+msgstr "ID або URL компанії Work.ua не може бути порожнім."
+
+#: includes/class-settings-page.php:152
+msgid "Could not extract company ID from the Work.ua URL."
+msgstr "Не вдалося витягти ID компанії з URL Work.ua."
+
+#: includes/class-settings-page.php:161
+msgid "The URL must be from work.ua."
+msgstr "URL має бути з сайту work.ua."
+
+#: includes/class-settings-page.php:173
+msgid "The Work.ua company ID must be numeric."
+msgstr "ID компанії Work.ua має бути числовим."
+
+#: includes/class-settings-page.php:185
+msgid "No vacancies found or invalid Work.ua company ID."
+msgstr "Вакансій не знайдено або недійсний ID компанії Work.ua."
+
+#: includes/class-settings-page.php:203
+msgid "The Rabota.ua company ID or URL cannot be empty."
+msgstr "ID або URL компанії Robota.ua не може бути порожнім."
+
+#: includes/class-settings-page.php:218
+msgid "Could not extract company ID from the Rabota.ua URL."
+msgstr "Не вдалося витягти ID компанії з URL Robota.ua."
+
+#: includes/class-settings-page.php:227
+msgid "The URL must be from robota.ua."
+msgstr "URL має бути з сайту robota.ua."
+
+#: includes/class-settings-page.php:239
+msgid "The Rabota.ua company ID must be numeric."
+msgstr "ID компанії Robota.ua має бути числовим."
+
+#: templates/admin-help-page.php:3
+msgid "Data output for work.ua"
+msgstr "Вивід даних для work.ua"
+
+#: templates/admin-help-page.php:5 templates/admin-help-page.php:22
+msgid "Shortcode usage"
+msgstr "Використання шорткоду"
+
+#: templates/admin-help-page.php:6
+msgid ""
+"To display vacancies from Work.ua, use the following shortcode on any page or post:"
+msgstr ""
+"Щоб відобразити вакансії з Work.ua, використовуйте наступний шорткод на будь-якій "
+"сторінці або у дописі:"
+
+#: templates/admin-help-page.php:8
+msgid ""
+"The output will be based on the options selected in the plugin settings page "
+"(Work.ua tab)."
+msgstr ""
+"Вивід базуватиметься на опціях, вибраних на сторінці налаштувань плагіна (вкладка "
+"Work.ua)."
+
+#: templates/admin-help-page.php:10 templates/admin-help-page.php:27
+msgid "Using in template code"
+msgstr "Використання в коді шаблону"
+
+#: templates/admin-help-page.php:11
+msgid ""
+"To embed the list of vacancies from Work.ua directly into your theme template files, "
+"use the following function:"
+msgstr ""
+"Щоб вставити список вакансій з Work.ua безпосередньо у шаблон вашої теми, "
+"використовуйте наступну функцію:"
+
+#: templates/admin-help-page.php:14 templates/admin-help-page.php:31
+msgid "Getting raw data"
+msgstr "Отримання сирих даних"
+
+#: templates/admin-help-page.php:15
+msgid ""
+"If you want to get raw vacancy data for custom processing, use the following "
+"function:"
+msgstr ""
+"Якщо ви хочете отримати сирі дані вакансій для власної обробки, використовуйте "
+"наступну функцію:"
+
+#: templates/admin-help-page.php:17 templates/admin-help-page.php:34
+msgid ""
+"The returned array includes two main sections: \"options\" (settings used for "
+"output) and \"jobs\" (list of vacancies)."
+msgstr ""
+"Повернений масив містить два основні розділи: \"options\" (налаштування для виводу) "
+"та \"jobs\" (список вакансій)."
+
+#: templates/admin-help-page.php:20
+msgid "Data output for robota.ua"
+msgstr "Вивід даних для robota.ua"
+
+#: templates/admin-help-page.php:23
+msgid "To display vacancies from Robota.ua, use the following shortcode:"
+msgstr "Щоб відобразити вакансії з Robota.ua, використовуйте наступний шорткод:"
+
+#: templates/admin-help-page.php:25
+msgid ""
+"The output will be based on the options selected in the plugin settings page "
+"(Robota.ua tab)"
+msgstr ""
+"Вивід базуватиметься на опціях, вибраних на сторінці налаштувань плагіна (вкладка "
+"Robota.ua)"
+
+#: templates/admin-help-page.php:28
+msgid ""
+"To embed the list of vacancies from Robota.ua directly into your theme template "
+"files, use the following function:"
+msgstr ""
+"Щоб вставити список вакансій з Robota.ua безпосередньо у шаблон вашої теми, "
+"використовуйте наступну функцію:"
+
+#: templates/admin-help-page.php:32
+msgid "For full access to the raw data from Robota.ua, use:"
+msgstr "Для повного доступу до сирих даних з Robota.ua використовуйте:"
+
+#: templates/admin-page.php:2
+msgid "Vacancy Scraper UA – Settings"
+msgstr "Vacancy Scraper UA – Налаштування"
+
+#: templates/forms/rabotaua-form.php:11
+msgid ""
+"Enter Robota.ua company ID(123456) or URL(https://robota.ua/company123456) and click "
+"Save."
+msgstr ""
+"Введіть ID компанії Robota.ua (123456) або URL (https://robota.ua/company123456) і "
+"натисніть Зберегти."
+
+#: templates/forms/rabotaua-form.php:13 templates/forms/workua-form.php:12
+msgid "Save"
+msgstr "Зберегти"
+
+#: templates/forms/rabotaua-form.php:18 templates/forms/workua-form.php:17
+msgid "Company added:"
+msgstr "Додано компанію:"
+
+#: templates/forms/rabotaua-form.php:20 templates/forms/workua-form.php:19
+msgid "Delete"
+msgstr "Видалити"
+
+#: templates/forms/rabotaua-form.php:23 templates/forms/workua-form.php:22
+msgid "Fetch Vacancies"
+msgstr "Отримати вакансії"
+
+#: templates/forms/rabotaua-form.php:27 templates/forms/workua-form.php:25
+msgid "Additional Options"
+msgstr "Додаткові налаштування"
+
+#: templates/forms/rabotaua-form.php:30 templates/forms/workua-form.php:42
+msgid "Filter by city"
+msgstr "Фільтр за містом"
+
+#: templates/forms/rabotaua-form.php:34 templates/forms/workua-form.php:46
+msgid "On/Off"
+msgstr "Увімк./Вимк"
+
+#: templates/forms/rabotaua-form.php:40 templates/forms/workua-form.php:52
+msgid "Job Vacancies Colors"
+msgstr "Кольори вакансій"
+
+#: templates/forms/rabotaua-form.php:44 templates/forms/workua-form.php:56
+msgid "Background Color"
+msgstr "Колір фону"
+
+#: templates/forms/rabotaua-form.php:48 templates/forms/workua-form.php:60
+msgid "Title Color"
+msgstr "Колір заголовка"
+
+#: templates/forms/rabotaua-form.php:52 templates/forms/workua-form.php:64
+msgid "City Color"
+msgstr "Колір міста"
+
+#: templates/forms/rabotaua-form.php:56 templates/forms/workua-form.php:69
+msgid "Salary Color"
+msgstr "Колір зарплати"
+
+#: templates/forms/rabotaua-form.php:60 templates/forms/rabotaua-form.php:64
+#: templates/forms/workua-form.php:74 templates/forms/workua-form.php:79
+msgid "Button Color"
+msgstr "Колір кнопки"
+
+#: templates/forms/rabotaua-form.php:73 templates/forms/workua-form.php:87
+msgid "Save Options"
+msgstr "Зберегти налаштування"
+
+#: templates/forms/rabotaua-form.php:78 templates/forms/workua-form.php:92
+msgid "Vacancies List"
+msgstr "Список вакансій"
+
+#: templates/forms/rabotaua-form.php:82 templates/forms/workua-form.php:96
+msgid "Name"
+msgstr "Ім’я"
+
+#: templates/forms/rabotaua-form.php:83 templates/forms/workua-form.php:97
+msgid "City"
+msgstr "Місто"
+
+#: templates/forms/rabotaua-form.php:84 templates/forms/workua-form.php:98
+msgid "Salary"
+msgstr "Зарплата"
+
+#: templates/forms/rabotaua-form.php:85 templates/forms/workua-form.php:99
+msgid "Link"
+msgstr "Посилання"
+
+#: templates/forms/rabotaua-form.php:99 templates/forms/workua-form.php:113
+msgid "View Vacancy"
+msgstr "Переглянути вакансію"
+
+#: templates/forms/rabotaua-form.php:116 templates/forms/workua-form.php:130
+msgid "« Previous"
+msgstr "« Назад"
+
+#: templates/forms/rabotaua-form.php:117 templates/forms/workua-form.php:131
+msgid "Next »"
+msgstr "Далі »"
+
+#: templates/forms/rabotaua-form.php:130 templates/forms/workua-form.php:144
+#: templates/frontend/rabotaua-vacancies.php:8
+#: templates/frontend/workua-vacancies.php:8
+msgid "No vacancies found."
+msgstr "Вакансій не знайдено."
+
+#: templates/forms/workua-form.php:10
+msgid "Enter Work.ua company ID(123456) or URL(https://www.work.ua/jobs/by-company/123456/) and click Save."
+msgstr "Введіть ID компанії Work.ua (123456) або URL (https://www.work.ua/jobs/by-company/123456/) і натисніть Зберегти."
+
+#: templates/frontend/rabotaua-vacancies.php:59
+#: templates/frontend/rabotaua-vacancies.php:63
+#: templates/frontend/workua-vacancies.php:59
+#: templates/frontend/workua-vacancies.php:63
+msgid "All cities"
+msgstr "Всі міста"

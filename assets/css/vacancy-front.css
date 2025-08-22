@@ -1,0 +1,252 @@
+
+    .workua_box .job_item_name{
+        color:var(--wjv-title);
+    }
+    .workua_box .job_item{
+        background:var(--wjv-background);
+    }
+    .workua_box .job_item:hover .job_item_btn{
+        background:var(--wjv-button-hover);
+    }
+    .workua_box .job_item_misto{
+        color:var(--wjv-city);
+    }
+    .workua_box .job_item_btn{
+        background:var(--wjv-button);
+    }
+    .workua_box .job_item_price{
+        color:var(--wjv-salary);
+    }
+
+
+
+    .rabotaua_box .job_item_name{
+        color:var(--rjv-title);
+    }
+    .rabotaua_box .job_item{
+       background:var(--rjv-background);
+    }
+    .rabotaua_box .job_item:hover .job_item_btn{
+        background:var(--rjv-button-hover);
+    }
+    .rabotaua_box .job_item_misto{
+         color:var(--rjv-city);
+    }
+    .rabotaua_box .job_item_btn{
+         background:var(--rjv-button);
+    }
+    .rabotaua_box .job_item_price{
+        color:var(--rjv-salary);
+    }
+
+.vacancy_block{
+    width:100%;
+}
+
+.job_box {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.job_item_name {
+	font-size: 16px;
+}
+
+.job_item_price {
+	font-size: 14px;
+}
+
+.job_item_misto {
+	font-size: 14px
+}
+
+
+.job_item {
+	border-radius: 20px;
+	padding: 20px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	transition: box-shadow .2s ease;
+    text-decoration: none;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.job_item_body {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding-right: 20px
+}
+
+.job_item_name {
+	font-weight: 500;
+	display: block;
+	font-size: 18px;
+	line-height: 120%;
+	margin-bottom: 20px;
+}
+
+.job_item_price {
+	font-size: 17px;
+	line-height: 120%;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+.job_item_misto {
+	font-size: 15px;
+	line-height: 120%;
+}
+
+.job_item_data {
+	margin-top: auto;
+	margin-bottom: 0;
+	display: flex;
+	flex-direction: column
+}
+
+.job_item_btn {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+    transition: background .2s ease;
+}
+
+.job_item_btn svg {
+	width: 15px;
+	height: 15px;
+}
+
+.job_item:hover {
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.job_filters_box{
+	margin-bottom:20px;
+	    justify-content: center;
+    display: flex;
+}
+
+.dropdown_wrapper{
+	position:relative;
+	width:350px;
+}
+
+.dropdown_arrow {
+   border: solid #275DAD;
+   border-width: 0 2px 2px 0;
+   display: inline-block;
+   padding: 3px;
+   transform: rotate(45deg);
+	margin:0 15px 0 20px;
+}
+
+.dropdown_header {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	width:100%;
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+	padding:15px 5px 15px 15px;
+	border-radius: 10px;
+	cursor:pointer;
+}
+
+.dropdown_header:hover {
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown_wrapper.active .dropdown_header {
+	 border-radius:10px 10px  0 0 ;
+}
+
+.dropdown_list{
+	position:absolute;
+	left:0;
+	top:100%;
+	z-index:3;
+	width:100%;
+	background:#fff;
+    border-radius: 0 0 10px 10px;
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+	opacity:0;
+	max-height:0;
+	overflow:hidden;
+	transition:opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.dropdown_wrapper.active .dropdown_list{
+	opacity:1;
+	max-height:400px;
+	overflow-y: auto;
+}
+
+.dropdown_item{
+	font-size: 16px;
+	padding:7px 15px;
+	color: #000;
+	cursor:pointer;
+}
+
+.dropdown_item:last-child{
+	margin-bottom:10px;
+}
+
+.dropdown_item:hover{
+	background: #e4e4e4;
+}
+
+.vakancii_section{
+	overflow:visible;
+}
+
+.pagination_wrapper {
+  margin-top: 20px;
+  text-align: center;
+}
+.pagination_wrapper button {
+  margin: 0 4px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #c6cbcd;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.pagination_wrapper button.active {
+  background-color: #98a1a4;
+  color: #fff;
+}
+
+.pagination_wrapper button.dots {
+  cursor: default;
+  background: none;
+  color: #98a1a4;
+}
+
+.pagination_wrapper button:disabled {
+  background: none;
+  color: #888;
+  cursor: default;
+}
+
+@media all and (max-width: 1200px) {
+	.job_box {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 15px;
+	}
+}
+
+@media all and (max-width: 767px) {
+	.job_box {
+		grid-template-columns: 1fr;
+	}
+}

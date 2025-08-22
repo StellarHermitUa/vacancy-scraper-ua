@@ -1,0 +1,64 @@
+.jv_additional{
+    padding:20px;
+    background:#fff;
+    margin:30px 0;
+}
+
+.jv_additional_title{
+    font-size:24px;
+    margin-top:0px;
+    margin-bottom:30px;
+}
+
+.jv-theme{
+    display: flex;
+    align-items: center;
+    margin-bottom:30px;
+}
+
+.jv-theme label{
+    display: flex;
+    align-items: center;
+    margin-right:30px;
+}
+
+.jv-theme label:last-of-type{
+    margin-right:0px;
+}
+
+.jv-theme label input{
+    margin-left:10px;
+}
+
+.jv-nav-tab-wrapper.nav-tab-wrapper{
+    margin-top:20px!important;
+}
+
+.company_id_field{
+    margin-top:30px;
+    width:350px;
+}
+
+.help_content{
+    padding:30px 0;
+}
+
+.widefat{
+    margin-top: 20px;
+}
+
+.widefat td:nth-of-type(1),.widefat th:nth-of-type(1){
+    width: 35%;
+}
+
+.widefat td:nth-of-type(2),.widefat th:nth-of-type(2){
+    width: 20%;
+}
+
+.widefat td:nth-of-type(3),.widefat th:nth-of-type(3){
+    width: 15%;
+}
+
+.widefat td:nth-of-type(4),.widefat th:nth-of-type(4){
+    width: 30%;
+}
