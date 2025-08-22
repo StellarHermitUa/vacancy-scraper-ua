@@ -12,6 +12,8 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Опис ==
 
+**WordPress.org page:** [Vacancy Scraper UA on WordPress.org](https://wordpress.org/plugins/vacancy-scraper-ua)
+
 Плагін отримує (копіює) публічно доступні вакансії з Work.ua (шляхом скрейпінгу публічних сторінок компаній) та
 Robota.ua (через їхній публічний API, без необхідності ключів API), зокрема назву вакансії, зарплату (якщо вказана) і місто.
 Списки можна відображати будь-де на сайті за допомогою шорткодів або допоміжних функцій.
