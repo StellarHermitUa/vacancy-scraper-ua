@@ -8,73 +8,76 @@ Stable tag: 1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-A plugin to fetch publicly available job postings from Work.ua (via scraping) and Robota.ua (via public API) and display them on your WordPress site.
+Плагін для отримання публічно доступних вакансій з Work.ua (через скрейпінг) і Robota.ua (через публічний API) та їх відображення на вашому сайті WordPress.
 
-== Description ==
+== Опис ==
 
-A plugin that retrieves (copies) publicly available job postings from Work.ua (by scraping public company pages) and 
-Robota.ua (via their public API, no API keys required), including vacancy title, salary (if shown) and city. 
-Listings can be displayed anywhere on your site using shortcodes or helper functions. 
-The plugin provides display settings (block styles) and a toggle to enable or disable city-based filtering 
-(using the public city list from the postings and/or Robota.ua’s public dictionary). 
-It uses only open, public data and the company's public ID from the URL. 
-It does not collect or store any personal data (neither yours nor your visitors'), and it does not copy the company name.
+Плагін отримує (копіює) публічно доступні вакансії з Work.ua (шляхом скрейпінгу публічних сторінок компаній) та
+Robota.ua (через їхній публічний API, без необхідності ключів API), зокрема назву вакансії, зарплату (якщо вказана) і місто.
+Списки можна відображати будь-де на сайті за допомогою шорткодів або допоміжних функцій.
+Плагін надає налаштування відображення (стилі блоків) і перемикач для ввімкнення/вимкнення фільтрації за містами
+(використовуючи публічний перелік міст з оголошень і/або публічний словник Robota.ua).
+Використовуються лише відкриті, публічні дані та публічний ID компанії з URL-адреси.
+Плагін не збирає та не зберігає жодних персональних даних (ані ваших, ані ваших відвідувачів) і не копіює назву компанії.
 
+= Зовнішні джерела даних (Work.ua і Robota.ua) =
 
-= External Data sources (Work.ua & Robota.ua) =
+Work.ua — український сайт з вакансіями.
+– Умови використання / Конфіденційність: https://www.work.ua/about-us/conditions/
 
-- Work.ua — Ukrainian job board.
-  – Terms of Use / Privacy: https://www.work.ua/about-us/conditions/
-  – Data used: ONLY publicly available job postings from a company’s public page.
-    The plugin copies vacancy title, salary (if shown), and city. A consolidated
-    city list is built from these postings to enable filtering.
-  – Company ID: taken from the public company URL.
+– Дані, що використовуються: ЛИШЕ публічно доступні вакансії зі сторінки компанії.
+Плагін копіює назву вакансії, зарплату (якщо вказана) і місто. Для фільтрації
+формується зведений перелік міст із цих оголошень.
+– ID компанії: береться з публічної URL-адреси компанії.
 
-- Robota.ua — Ukrainian employment portal with public endpoints.
-  – Terms & Privacy:
-    • Terms (job seekers): https://images.cf-rabota.com.ua/2017/03/TOU_for_Users_rabota.ua.pdf
-    • Terms (employers):   https://images.cf-rabota.com.ua/alliance/terms_of_use_employer_v4.pdf
-    • Privacy Policy:      https://images.cf-rabota.com.ua/2024/privacy_offer_20.11.2024.pdf
-  – Data used: ONLY publicly available data via public API; no API keys required.
-    Endpoints used:
-      • https://api.robota.ua/companies/{company_id}/published-vacancies
-        (fetch the company’s publicly published vacancies)
-      • https://api.robota.ua/dictionary/city
-        (fetch the site-wide public city dictionary once to support city filtering)
-  – Company ID: taken from the public company URL.
+Robota.ua — український портал працевлаштування з публічними endpoint’ами.
+– Умови та конфіденційність:
+• Умови (для пошукачів): https://images.cf-rabota.com.ua/2017/03/TOU_for_Users_rabota.ua.pdf
+• Умови (для роботодавців): https://images.cf-rabota.com.ua/alliance/terms_of_use_employer_v4.pdf
+• Політика конфіденційності: https://images.cf-rabota.com.ua/2024/privacy_offer_20.11.2024.pdf
 
-General note: The plugin requests and displays only public/open data from those sites.
-It does not collect or store any personal data—neither yours nor your visitors’.
+– Дані, що використовуються: ЛИШЕ публічно доступні дані через публічний API; ключі API не потрібні.
+Використовувані endpoint’и:
+• https://api.robota.ua/companies/{company_id}/published-vacancies
+(отримання публічно опублікованих вакансій компанії)
+• https://api.robota.ua/dictionary/city
+(одноразове отримання загальносайтового публічного словника міст для підтримки фільтрації)
 
-= File Permissions =
-The plugin requires write permissions to its assets/css/ directory. 
-Please ensure your server configuration allows WordPress to write to this folder.
+– ID компанії: береться з публічної URL-адреси компанії.
+Загальна примітка: Плагін запитує та відображає лише відкриті/публічні дані з цих сайтів.
+Він не збирає та не зберігає персональних даних — ані ваших, ані ваших відвідувачів.
 
-== Installation ==
-1. Upload the plugin files to the `/wp-content/plugins/vacancy-scraper-ua/` directory.
-2. Activate the plugin through the 'Plugins' screen in WordPress.
-3. Configure company IDs in the plugin settings.
+= Права доступу до файлів =
+Плагіну потрібні права на запис у теку assets/css/.
+Будь ласка, переконайтеся, що конфігурація вашого сервера дозволяє WordPress записувати в цю теку.
 
-== Changelog ==
+== Встановлення ==
+
+Завантажте файли плагіна до каталогу /wp-content/plugins/vacancy-scraper-ua/.
+Активуйте плагін через екран «Плагіни» у WordPress.
+Налаштуйте ID компаній у налаштуваннях плагіна.
+
+== Журнал змін ==
 
 = 1.1 =
-* Added: Dynamic CSS generation for frontend styling
-* Improved: Admin interface with color pickers
-* Fixed: Minor code errors
+Додано: Динамічне генерування CSS для стилізації фронтенду
+Поліпшено: Адмін-інтерфейс із колорпікерами
+Виправлено: Невеликі помилки в коді
 
 = 1.0 =
-* Initial release.
 
-== Upgrade Notice ==
+Початковий реліз.
+
+== Примітка щодо оновлення ==
 = 1.1 =
-Fixed bugs in data output, connection of style files and scripts
+Виправлено помилки у виведенні даних, підключенні файлів стилів і скриптів
 
 = 1.0 =
-Initial release.
+Початковий реліз.
 
-== Frequently Asked Questions ==
-= Does it require an API key? =
-No, Work.ua does not have an API and is scraped directly. Rabota.ua API does not require keys for company job listings.
+== Поширені запитання ==
+= Чи потрібен ключ API? =
+Ні. Work.ua не має API і дані збираються безпосередньо. API Rabota.ua не потребує ключів для списків вакансій компаній.
 
-= Can I use different colors for different job boards? =
-Yes! Each job board (Work.ua and Robota.ua) has its own independent color settings.
+= Чи можу я використовувати різні кольори для різних сайтів вакансій? =
+Так! Для кожного сайту вакансій (Work.ua та Robota.ua) передбачені власні незалежні налаштування кольорів.
